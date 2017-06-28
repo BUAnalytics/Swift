@@ -1,6 +1,6 @@
 # Swift Plugin
 
-BU Analytics Swift plugin.
+BU Analytics plugin for Swift compatible with iOS, macOS, tvOS, watchOS and Linux.
 
 ## Installation
 

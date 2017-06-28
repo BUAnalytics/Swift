@@ -17,13 +17,14 @@ BUAPI.instance.auth = BUAccessKey(key: "585913d39dd4c40001c12920", secret: "7BbQ
 The hostname defaults to the university server although we can change this if necessary.
 
 ```swift
-BUAPI.instance.url = "http://192.168.0.22"
+BUAPI.instance.url = "http://192.168.0.x"
 BUAPI.instance.url = "/api/v1"
 ```
 
 ## Creating Collections
 
-We must then create the collections that we would like to use throughout the application. This can be done at any point and as many times as needed however collections will not be overwritten if created with a duplicate names.
+We must then create the collections that we would like to use throughout the application. 
+This can be done at any point and as many times as needed however collections will not be overwritten if created with a duplicate names.
 
 ```swift
 BUCollectionManager.instance.create(names: [
@@ -35,18 +36,19 @@ BUCollectionManager.instance.create(names: [
 
 ## Creating a Document
 
-We can create a document using a dictionary literal that allows for as many nested values as needed. Documents support nested dictionaries, arrays and will encode literal data types when uploading to the backend server.
+We can create a document using a dictionary literal that allows for as many nested values as needed. 
+Documents support nested dictionaries, arrays and will encode literal data types when uploading to the backend server.
 
 ```swift
 let userDoc = BUDocument(contents: [
-    "userId": Utility.userId as Any,
-    "name": nameField.stringValue,
-    "age": age,
-    "gender": gender.rawValue,
+    "userId": ..,
+    "name": ..,
+    "age": ..,
+    "gender": ..,
     "device": [
-        "type": "Desktop",
-        "name": Host.current().localizedName,
-        "model": Sysctl.model
+        "type": ..,
+        "name": ..,
+        "model": ..
     ]
 ])
 ```
@@ -55,10 +57,10 @@ You can also create documents through the add method or can access the raw dicti
 
 ```swift
 let userDoc = BUDocument()
-userDoc.append("userId", value: userId)
-userDoc.append("name", value: nameField.text)
-userDoc.append("age", value: age)
-userDoc.append("gender", value: gender)
+userDoc.append("userId", value: ..)
+userDoc.append("name", value: ..)
+userDoc.append("age", value: ..)
+userDoc.append("gender", value: ..)
 ```
 
 ## Adding a Document to Collection
@@ -70,14 +72,16 @@ BUCollectionManager.instance.collections["Users"]!.append(document: userDoc)
 BUCollectionManager.instance.collections["Users"]!.append(documents: [ userDoc1, userDoc2, userDoc3 ])
 ```
 
-Collections will automatically push all documents to the backend server every two seconds if not empty. You can also manually initiate an upload either on all or a specific collection.
+Collections will automatically push all documents to the backend server every two seconds if not empty. 
+You can also manually initiate an upload either on all or a specific collection.
 
 ```swift
 BUCollectionManager.instance.uploadAll()
 BUCollectionManager.instance.collections["Users"]!.upload()
 ```
 
-You can also use the interval property to configure how often collections are uploaded in milliseconds. The default is 2000 milliseconds and setting it to 0 will disable automatic uploads.
+You can also use the interval property to configure how often collections are uploaded in milliseconds. 
+The default is 2000 milliseconds and setting it to 0 will disable automatic uploads.
 
 ```swift
 BUCollectionManager.instance.interval = 4000

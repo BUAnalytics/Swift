@@ -19,7 +19,7 @@ The hostname defaults to the university server although we can change this if ne
 
 ```swift
 BUAPI.instance.url = "http://192.168.0.x"
-BUAPI.instance.url = "/api/v1"
+BUAPI.instance.path = "/api/v1"
 ```
 
 ## Creating Collections

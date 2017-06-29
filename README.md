@@ -8,10 +8,11 @@ To install the plugin you must copy the [BUAnalytics](BUAnalytics) folder into y
 
 ## Authentication
 
-To authenticate with the backend you must first create an access key through the web management interface. Then pass these details into the api singleton instance.
+To authenticate with the backend you must first create an access key through the web management interface. 
+Then pass these details into the api singleton instance.
 
 ```swift
-BUAPI.instance.auth = BUAccessKey(key: "585913d39dd4c40001c12920", secret: "7BbQYgXi21A56D8ofOypaIkJDUjqoo")
+BUAPI.instance.auth = BUAccessKey(key: "58ac40d0126553000c426f92", secret: "9a48ab9ac420c0b7f0ed477bb7f56b267477bb808b5ec4d2dddb7e39a57e6f4a")
 ```
 
 The hostname defaults to the university server although we can change this if necessary.
@@ -57,10 +58,12 @@ You can also create documents through the add method or can access the raw dicti
 
 ```swift
 let userDoc = BUDocument()
+
 userDoc.append("userId", value: ..)
 userDoc.append("name", value: ..)
-userDoc.append("age", value: ..)
-userDoc.append("gender", value: ..)
+
+userDoc.contents["age"] = ..
+userDoc.contents["gender"] = ..
 ```
 
 ## Adding a Document to Collection
@@ -102,3 +105,28 @@ BUCollectionManager.instance.success = { (collection, count) in
 ```
 
 You can also provide error and success actions to an individual collection using the upload method.
+
+## Unique Identifiers
+
+You can use our backend to generate unique identifiers for use inside documents. 
+Setup the cache at startup specifying how many identifiers you'd like to hold.
+
+```swift
+BUID.instance.start(200)
+```
+
+Once the cache has been marked as ready you can generate identifiers at any time.
+
+```swift
+if BUID.instance.isReady{
+  userDoc.append("userId", BUID.instance.generate())
+}
+```
+
+You can modify the refresh frequency or size of the cache depending on how many identifiers you require. 
+GUIDs will be generated as a backup should the cache become empty.
+
+```swift
+BUID.instance.interval = 4000
+BUID.instance.size = 100
+```

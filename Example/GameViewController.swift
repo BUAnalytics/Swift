@@ -31,6 +31,9 @@ class GameViewController: NSViewController {
         //Set session start
         sessionStart = Date()
         
+        //Generate unique session identifier
+        Utility.sessionId = BUID.instance.generate()
+        
         self.delayButton()
     }
     
@@ -41,6 +44,7 @@ class GameViewController: NSViewController {
             
             //Create new session in collection
             let sessionDoc = BUDocument(contents: [
+                "sessionId": Utility.sessionId as Any,
                 "userId": Utility.userId as Any,
                 "start": sessionStart,
                 "end": Date()
@@ -92,6 +96,7 @@ class GameViewController: NSViewController {
         
         //Create new click and add it to list
         let clickDoc = BUDocument(contents: [
+            "sessionId": Utility.sessionId as Any,
             "userId": Utility.userId as Any,
             "clickTime": clickTime,
             "delayTime": delayTime,

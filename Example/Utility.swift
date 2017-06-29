@@ -11,23 +11,7 @@ import Cocoa
 public class Utility{
     
     public static var userId: String?
-    
-    //Create new identifier string
-    public static func newID() -> String{
-        return UUID().uuidString
-    }
-    
-    //Create MD5 hash from input string
-    public static func md5(input: String) -> String{
-        guard let messageData = input.data(using:String.Encoding.utf8) else { return "" }
-        var digestData = Data(count: Int(CC_MD5_DIGEST_LENGTH))
-        _ = digestData.withUnsafeMutableBytes {digestBytes in
-            messageData.withUnsafeBytes {messageBytes in
-                CC_MD5(messageBytes, CC_LONG(messageData.count), digestBytes)
-            }
-        }
-        return digestData.map { String(format: "%02hhx", $0) }.joined()
-    }
+    public static var sessionId: String?
     
     //Generate random number between doubles
     public static func randomDoubleBetween(first: Double, second: Double) -> Double{

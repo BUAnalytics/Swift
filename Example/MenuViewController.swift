@@ -26,6 +26,9 @@ class MenuViewController: NSViewController {
         BUAPI.instance.auth = BUAccessKey("58ac40d0126553000c426f92", secret: "9a48ab9ac420c0b7f0ed477bb7f56b267477bb808b5ec4d2dddb7e39a57e6f4a")
         //BUAPI.instance.url = "https://192.168.0.69"; //Defaults to https://bu-games.bmth.ac.uk
         
+        //Start loading a cache of 200 unique identifiers from backend
+        BUID.instance.start(size: 200)
+        
         //Create collections with names
         BUCollectionManager.instance.create(names: [
             "Users",
@@ -35,16 +38,17 @@ class MenuViewController: NSViewController {
         
         //Subscribe to collection errors
         BUCollectionManager.instance.error = { (collection, code) in
-            print("[BUGamesLab][\(collection.name)] Failed to upload with error code \(code.rawValue)")
+            print("[BUAnalytics][\(collection.name)] Failed to upload with error code \(code.rawValue)")
         }
         
         //Subscribe to collection uploads
         BUCollectionManager.instance.success = { (collection, count) in
-            print("[BUGamesLab][\(collection.name)] Successfully uploaded \(count) documents")
+            print("[BUAnalytics][\(collection.name)] Successfully uploaded \(count) documents")
         }
         
         //Configure collection upload interval
         BUCollectionManager.instance.interval = 4000
+        BUID.instance.interval = 4000
     }
     
     @IBAction func startCountdownTimer(_ sender: Any) {
@@ -81,7 +85,9 @@ class MenuViewController: NSViewController {
             }
             
             //Generate user id hash from two unique bits of information
-            Utility.userId = Utility.md5(input: "\(nameField.stringValue)\(gender.rawValue)")
+            if Utility.userId == nil{
+                Utility.userId = BUID.instance.generate()
+            }
             
             //Create new user in collection
             let userDoc = BUDocument(contents: [

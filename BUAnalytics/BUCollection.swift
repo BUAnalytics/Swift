@@ -53,7 +53,7 @@ public class BUCollection{
         BUAPI.instance.request(withPath: "/projects/collections/\(name)/documents", method: .POST, body: body, error: { (code) in
 
             //Log error code
-            print("[BUGamesLab][\(self.name)] Failed to push \(self.buffer.count) documents to server with error code \(code.rawValue)")
+            print("[BUAnalytics][\(self.name)] Failed to push \(self.buffer.count) documents to server with error code \(code.rawValue)")
             
             //Move buffer back to documents list
             self.documents.append(contentsOf: self.buffer)

@@ -13,6 +13,7 @@
 		5745D76F1E09781700B0E687 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745D76E1E09781700B0E687 /* Utility.swift */; };
 		5745D7711E097B5C00B0E687 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745D7701E097B5C00B0E687 /* GameViewController.swift */; };
 		5745D7771E0983F100B0E687 /* CwlSysctl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5745D7761E0983F100B0E687 /* CwlSysctl.swift */; };
+		575E24891F05122400F0F918 /* BUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575E24881F05122400F0F918 /* BUID.swift */; };
 		5762ADA71F03EF7000757AE0 /* BUAccessKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762ADA11F03EF7000757AE0 /* BUAccessKey.swift */; };
 		5762ADA81F03EF7000757AE0 /* BUAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762ADA21F03EF7000757AE0 /* BUAPI.swift */; };
 		5762ADA91F03EF7000757AE0 /* BUCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762ADA31F03EF7000757AE0 /* BUCollection.swift */; };
@@ -33,6 +34,7 @@
 		5745D76E1E09781700B0E687 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = Example/Utility.swift; sourceTree = SOURCE_ROOT; };
 		5745D7701E097B5C00B0E687 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameViewController.swift; path = Example/GameViewController.swift; sourceTree = SOURCE_ROOT; };
 		5745D7761E0983F100B0E687 /* CwlSysctl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CwlSysctl.swift; path = Example/CwlSysctl.swift; sourceTree = "<group>"; };
+		575E24881F05122400F0F918 /* BUID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUID.swift; sourceTree = "<group>"; };
 		5762ADA11F03EF7000757AE0 /* BUAccessKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUAccessKey.swift; sourceTree = "<group>"; };
 		5762ADA21F03EF7000757AE0 /* BUAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUAPI.swift; sourceTree = "<group>"; };
 		5762ADA31F03EF7000757AE0 /* BUCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUCollection.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				5762ADA41F03EF7000757AE0 /* BUCollectionManager.swift */,
 				5762ADA51F03EF7000757AE0 /* BUDocument.swift */,
 				5762ADA61F03EF7000757AE0 /* BUError.swift */,
+				575E24881F05122400F0F918 /* BUID.swift */,
 			);
 			path = BUAnalytics;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5762ADA91F03EF7000757AE0 /* BUCollection.swift in Sources */,
+				575E24891F05122400F0F918 /* BUID.swift in Sources */,
 				5762ADA71F03EF7000757AE0 /* BUAccessKey.swift in Sources */,
 				5745D7711E097B5C00B0E687 /* GameViewController.swift in Sources */,
 				5762ADAB1F03EF7000757AE0 /* BUDocument.swift in Sources */,

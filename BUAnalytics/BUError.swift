@@ -57,18 +57,45 @@ public enum BUError: Int{
     case PRJ_InvalidImage = 41106
     
     //! Access Keys
-    case PRJ_ACK_Invalid = 42000
-    case PRJ_ACK_NotFound = 42001
-    case PRJ_ACK_Incorrect = 42002
+    case ACK_Invalid = 42000
+    case ACK_NotFound = 42001
+    case ACK_Incorrect = 42002
     
-    case PRJ_ACK_InvalidName = 42100
-    case PRJ_ACK_InvalidStatus = 42101
+    case ACK_InvalidName = 42100
+    case ACK_InvalidStatus = 42101
     
     //! Collections
-    case PRJ_COL_Invalid = 43000
-    case PRJ_COL_NotFound = 43001
-    case PRJ_COL_Access = 43002
+    case COL_Invalid = 43000
+    case COL_NotFound = 43001
+    case COL_Access = 43002
     
-    case PRJ_COL_InvalidName = 43100
-    case PRJ_COL_InvalidBody = 43101
+    case COL_InvalidSize = 43100
+    case COL_InvalidPage = 43101
+    case COL_InvalidSort = 43102
+    case COL_InvalidDir = 43103
+    case COL_InvalidName = 43104
+    case COL_InvalidBody = 43105
+    
+    //! Visuals
+    case VIS_Invalid = 44000
+    case VIS_NotFound = 44001
+    case VIS_Access = 44002
+    
+    case VIS_InvalidCollection = 44100
+    case VIS_InvalidName = 44101
+    case VIS_InvalidType = 44102
+    case VIS_InvalidOptions = 44103
+    
+    case VIS_IncorrectCollection = 44200
+    case VIS_IncorrectType = 44201
+    
+    //! Applications
+    case APP_MissingContName = 51000
+    case APP_MissingContEmail = 51001
+    case APP_MissingContPhone = 51002
+    case APP_MissingOrgName = 51003
+    case APP_MissingOrgAddress = 51004
+    case APP_MissingProjDuration = 51005
+    case APP_MissingProjPurpose = 51006
+    case APP_MissingProjDescription = 51007
 }

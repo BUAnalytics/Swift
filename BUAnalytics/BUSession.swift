@@ -56,7 +56,7 @@ public class BUSession: BUDocument{
         if let val = version{ append("version", value: val) }
         
         //Add to collection manager
-        BUCollectionManager.instance.append(collection: collection ?? "Sessions", document: BUDocument())
+        BUCollectionManager.instance.append(collection: collection ?? "Sessions", document: self)
         
         //Remove current if self
         if BUSession.current === self{

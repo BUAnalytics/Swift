@@ -39,7 +39,7 @@ public class BUCollectionManager {
     public func append(collection: String, document: BUDocument){
         
         //Check whether document exists and create
-        if  collections[collection] === nil{
+        if collections[collection] === nil{
             collections[collection] = BUCollection(name: collection)
         }
         

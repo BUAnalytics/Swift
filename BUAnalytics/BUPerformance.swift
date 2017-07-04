@@ -41,7 +41,7 @@ public class BUPerformance: BUTemplate{
         ])
         
         //Add optional fields
-        if let val = name{ self.append("name", value: val) }
+        if let val = name{ append("name", value: val) }
         
         super.upload(collection: collection ?? "Performance")
     }

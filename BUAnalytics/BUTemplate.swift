@@ -16,8 +16,8 @@ public class BUTemplate: BUDocument{
     public func upload(collection: String){
         
         //Add optional linking fields
-        if let val = userId{ self.append("userId", value: val) }
-        if let val = sessionId{ self.append("sessionId", value: val) }
+        if let val = userId{ append("userId", value: val) }
+        if let val = sessionId{ append("sessionId", value: val) }
         
         //Add to collection manager
         BUCollectionManager.instance.append(collection: collection, document: self)

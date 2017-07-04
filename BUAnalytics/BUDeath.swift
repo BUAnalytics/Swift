@@ -29,7 +29,7 @@ public class BUDeath: BUTemplate{
     public func upload(){
         
         //Add optional fields
-        if let val = location{ self.append("location", value: val) }
+        if let val = location{ append("location", value: val) }
         
         super.upload(collection: collection ?? "Deaths")
     }

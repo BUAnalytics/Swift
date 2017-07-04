@@ -49,11 +49,11 @@ public class BUSession: BUDocument{
         ])
         
         //Add optional fields
-        if let val = userId{ self.append("userId", value: val) }
-        if let val = ip{ self.append("ip", value: val) }
-        if let val = device{ self.append("device", value: val) }
-        if let val = system{ self.append("system", value: val) }
-        if let val = version{ self.append("version", value: val) }
+        if let val = userId{ append("userId", value: val) }
+        if let val = ip{ append("ip", value: val) }
+        if let val = device{ append("device", value: val) }
+        if let val = system{ append("system", value: val) }
+        if let val = version{ append("version", value: val) }
         
         //Add to collection manager
         BUCollectionManager.instance.append(collection: collection ?? "Sessions", document: BUDocument())

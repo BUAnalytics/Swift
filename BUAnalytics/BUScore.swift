@@ -24,8 +24,8 @@ public class BUScore: BUTemplate{
     public func upload(){
         
         //Add optional fields
-        if let val = value{ self.append("value", value: val) }
-        if let val = highest{ self.append("highest", value: val) }
+        if let val = value{ append("value", value: val) }
+        if let val = highest{ append("highest", value: val) }
         
         super.upload(collection: collection ?? "Scores")
     }

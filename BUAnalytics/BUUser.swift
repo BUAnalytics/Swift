@@ -23,8 +23,8 @@ public class BUUser: BUDocument{
     
     public var username: String?
     public var name: String?
-    public var first_name: String?
-    public var last_name: String?
+    public var firstName: String?
+    public var lastName: String?
     public var email: String?
     public var phone: String?
     public var age: Int?
@@ -41,14 +41,14 @@ public class BUUser: BUDocument{
         self.append("userId", value: userId)
         
         //Add optional fields
-        if let val = username{ self.append("username", value: val) }
-        if let val = name{ self.append("name", value: val) }
-        if let val = first_name{ self.append("first_name", value: val) }
-        if let val = last_name{ self.append("last_name", value: val) }
-        if let val = email{ self.append("email", value: val) }
-        if let val = phone{ self.append("phone", value: val) }
-        if let val = age{ self.append("age", value: val) }
-        if let val = gender{ self.append("gender", value: val) }
+        if let val = username{ append("username", value: val) }
+        if let val = name{ append("name", value: val) }
+        if let val = firstName{ append("first_name", value: val) }
+        if let val = lastName{ append("last_name", value: val) }
+        if let val = email{ append("email", value: val) }
+        if let val = phone{ append("phone", value: val) }
+        if let val = age{ append("age", value: val) }
+        if let val = gender{ append("gender", value: val) }
         
         //Add to collection manager
         BUCollectionManager.instance.append(collection: collection ?? "Users", document: self)

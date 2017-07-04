@@ -55,10 +55,10 @@ public class BUQuestion: BUTemplate{
         ])
         
         //Add optional fields
-        if let val = name{ self.append("name", value: val) }
-        if let val = question{ self.append("question", value: val) }
-        if let val = answer{ self.append("answer", value: val) }
-        if let val = correct{ self.append("correct", value: val) }
+        if let val = name{ append("name", value: val) }
+        if let val = question{ append("question", value: val) }
+        if let val = answer{ append("answer", value: val) }
+        if let val = correct{ append("correct", value: val) }
         
         super.upload(collection: collection ?? "Questions")
     }

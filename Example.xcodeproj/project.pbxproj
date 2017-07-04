@@ -21,14 +21,14 @@
 		5762ADAB1F03EF7000757AE0 /* BUDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762ADA51F03EF7000757AE0 /* BUDocument.swift */; };
 		5762ADAC1F03EF7000757AE0 /* BUError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5762ADA61F03EF7000757AE0 /* BUError.swift */; };
 		5766F3FC1E09A0980035ED54 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5766F3FB1E09A0980035ED54 /* MenuViewController.swift */; };
-		57986EB21F0BDBFD005D69CC /* BUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EB11F0BDBFD005D69CC /* BUSession.swift */; };
-		57986EB41F0BE090005D69CC /* BUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EB31F0BE090005D69CC /* BUUser.swift */; };
-		57986EB61F0BE7C8005D69CC /* BUScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EB51F0BE7C8005D69CC /* BUScore.swift */; };
-		57986EB81F0BE9DF005D69CC /* BUScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EB71F0BE9DF005D69CC /* BUScreen.swift */; };
-		57986EBA1F0BEA53005D69CC /* BUDeath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EB91F0BEA53005D69CC /* BUDeath.swift */; };
-		57986EBC1F0BF8E7005D69CC /* BUPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EBB1F0BF8E7005D69CC /* BUPerformance.swift */; };
-		57986EBE1F0BFA3F005D69CC /* BUQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EBD1F0BFA3F005D69CC /* BUQuestion.swift */; };
-		57986EC01F0BFB84005D69CC /* BUTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EBF1F0BFB84005D69CC /* BUTemplate.swift */; };
+		57986EC91F0C1FCE005D69CC /* BUDeath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC11F0C1FCE005D69CC /* BUDeath.swift */; };
+		57986ECA1F0C1FCE005D69CC /* BUPerformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC21F0C1FCE005D69CC /* BUPerformance.swift */; };
+		57986ECB1F0C1FCE005D69CC /* BUQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC31F0C1FCE005D69CC /* BUQuestion.swift */; };
+		57986ECC1F0C1FCE005D69CC /* BUScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC41F0C1FCE005D69CC /* BUScore.swift */; };
+		57986ECD1F0C1FCE005D69CC /* BUScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC51F0C1FCE005D69CC /* BUScreen.swift */; };
+		57986ECE1F0C1FCE005D69CC /* BUSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC61F0C1FCE005D69CC /* BUSession.swift */; };
+		57986ECF1F0C1FCE005D69CC /* BUTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC71F0C1FCE005D69CC /* BUTemplate.swift */; };
+		57986ED01F0C1FCE005D69CC /* BUUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986EC81F0C1FCE005D69CC /* BUUser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,14 +50,14 @@
 		5762ADA51F03EF7000757AE0 /* BUDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUDocument.swift; sourceTree = "<group>"; };
 		5762ADA61F03EF7000757AE0 /* BUError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUError.swift; sourceTree = "<group>"; };
 		5766F3FB1E09A0980035ED54 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = Example/MenuViewController.swift; sourceTree = SOURCE_ROOT; };
-		57986EB11F0BDBFD005D69CC /* BUSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUSession.swift; sourceTree = "<group>"; };
-		57986EB31F0BE090005D69CC /* BUUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUUser.swift; sourceTree = "<group>"; };
-		57986EB51F0BE7C8005D69CC /* BUScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUScore.swift; sourceTree = "<group>"; };
-		57986EB71F0BE9DF005D69CC /* BUScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUScreen.swift; sourceTree = "<group>"; };
-		57986EB91F0BEA53005D69CC /* BUDeath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUDeath.swift; sourceTree = "<group>"; };
-		57986EBB1F0BF8E7005D69CC /* BUPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUPerformance.swift; sourceTree = "<group>"; };
-		57986EBD1F0BFA3F005D69CC /* BUQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUQuestion.swift; sourceTree = "<group>"; };
-		57986EBF1F0BFB84005D69CC /* BUTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BUTemplate.swift; sourceTree = "<group>"; };
+		57986EC11F0C1FCE005D69CC /* BUDeath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUDeath.swift; path = Templates/BUDeath.swift; sourceTree = "<group>"; };
+		57986EC21F0C1FCE005D69CC /* BUPerformance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUPerformance.swift; path = Templates/BUPerformance.swift; sourceTree = "<group>"; };
+		57986EC31F0C1FCE005D69CC /* BUQuestion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUQuestion.swift; path = Templates/BUQuestion.swift; sourceTree = "<group>"; };
+		57986EC41F0C1FCE005D69CC /* BUScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUScore.swift; path = Templates/BUScore.swift; sourceTree = "<group>"; };
+		57986EC51F0C1FCE005D69CC /* BUScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUScreen.swift; path = Templates/BUScreen.swift; sourceTree = "<group>"; };
+		57986EC61F0C1FCE005D69CC /* BUSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUSession.swift; path = Templates/BUSession.swift; sourceTree = "<group>"; };
+		57986EC71F0C1FCE005D69CC /* BUTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUTemplate.swift; path = Templates/BUTemplate.swift; sourceTree = "<group>"; };
+		57986EC81F0C1FCE005D69CC /* BUUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BUUser.swift; path = Templates/BUUser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,14 +139,14 @@
 		57986EB01F0BDB23005D69CC /* Templates */ = {
 			isa = PBXGroup;
 			children = (
-				57986EB11F0BDBFD005D69CC /* BUSession.swift */,
-				57986EBF1F0BFB84005D69CC /* BUTemplate.swift */,
-				57986EB31F0BE090005D69CC /* BUUser.swift */,
-				57986EB51F0BE7C8005D69CC /* BUScore.swift */,
-				57986EB71F0BE9DF005D69CC /* BUScreen.swift */,
-				57986EB91F0BEA53005D69CC /* BUDeath.swift */,
-				57986EBB1F0BF8E7005D69CC /* BUPerformance.swift */,
-				57986EBD1F0BFA3F005D69CC /* BUQuestion.swift */,
+				57986EC11F0C1FCE005D69CC /* BUDeath.swift */,
+				57986EC21F0C1FCE005D69CC /* BUPerformance.swift */,
+				57986EC31F0C1FCE005D69CC /* BUQuestion.swift */,
+				57986EC41F0C1FCE005D69CC /* BUScore.swift */,
+				57986EC51F0C1FCE005D69CC /* BUScreen.swift */,
+				57986EC61F0C1FCE005D69CC /* BUSession.swift */,
+				57986EC71F0C1FCE005D69CC /* BUTemplate.swift */,
+				57986EC81F0C1FCE005D69CC /* BUUser.swift */,
 			);
 			name = Templates;
 			sourceTree = "<group>";
@@ -223,25 +223,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57986EB81F0BE9DF005D69CC /* BUScreen.swift in Sources */,
 				5762ADA91F03EF7000757AE0 /* BUCollection.swift in Sources */,
-				57986EB41F0BE090005D69CC /* BUUser.swift in Sources */,
-				57986EB61F0BE7C8005D69CC /* BUScore.swift in Sources */,
-				57986EB21F0BDBFD005D69CC /* BUSession.swift in Sources */,
+				57986ECE1F0C1FCE005D69CC /* BUSession.swift in Sources */,
 				575E24891F05122400F0F918 /* BUID.swift in Sources */,
+				57986EC91F0C1FCE005D69CC /* BUDeath.swift in Sources */,
 				5762ADA71F03EF7000757AE0 /* BUAccessKey.swift in Sources */,
 				5745D7711E097B5C00B0E687 /* GameViewController.swift in Sources */,
+				57986ECB1F0C1FCE005D69CC /* BUQuestion.swift in Sources */,
+				57986ECA1F0C1FCE005D69CC /* BUPerformance.swift in Sources */,
+				57986ECF1F0C1FCE005D69CC /* BUTemplate.swift in Sources */,
 				5762ADAB1F03EF7000757AE0 /* BUDocument.swift in Sources */,
 				5745D76F1E09781700B0E687 /* Utility.swift in Sources */,
 				5762ADAC1F03EF7000757AE0 /* BUError.swift in Sources */,
 				5736D03E1E094FD4009FADBB /* AppDelegate.swift in Sources */,
-				57986EBA1F0BEA53005D69CC /* BUDeath.swift in Sources */,
-				57986EBC1F0BF8E7005D69CC /* BUPerformance.swift in Sources */,
+				57986ED01F0C1FCE005D69CC /* BUUser.swift in Sources */,
+				57986ECC1F0C1FCE005D69CC /* BUScore.swift in Sources */,
 				5766F3FC1E09A0980035ED54 /* MenuViewController.swift in Sources */,
-				57986EBE1F0BFA3F005D69CC /* BUQuestion.swift in Sources */,
+				57986ECD1F0C1FCE005D69CC /* BUScreen.swift in Sources */,
 				5745D7771E0983F100B0E687 /* CwlSysctl.swift in Sources */,
 				5762ADAA1F03EF7000757AE0 /* BUCollectionManager.swift in Sources */,
-				57986EC01F0BFB84005D69CC /* BUTemplate.swift in Sources */,
 				5762ADA81F03EF7000757AE0 /* BUAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

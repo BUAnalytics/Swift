@@ -31,9 +31,20 @@ public class BUCollectionManager {
         for name in names where !collections.keys.contains(name){
             
             //Create new collection if name doesnt exist
-            let collection = BUCollection(name: name)
-            collections[name] = collection
+            collections[name] = BUCollection(name: name)
         }
+    }
+    
+    //Convenience method for adding a document to a collection and creating the collection if non-existant
+    public func append(collection: String, document: BUDocument){
+        
+        //Check whether document exists and create
+        if  collections[collection] === nil{
+            collections[collection] = BUCollection(name: collection)
+        }
+        
+        //Add document to collection
+        collections[collection]!.append(document: document)
     }
     
     //Push documents in all collections to backend server

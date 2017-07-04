@@ -23,4 +23,10 @@ public class BUDocument{
     public func append(_ key: String, value: Any){
         contents[key] = value
     }
+    
+    public func append(_ contents: [String: Any]){
+        for (key, value) in contents{
+            self.contents[key] = value
+        }
+    }
 }

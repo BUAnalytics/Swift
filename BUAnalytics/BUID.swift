@@ -33,7 +33,7 @@ public class BUID {
         if identifiers.count <= 0{
         
             //Log error
-            print("[BUAnalytics] Identifier cache has been depleted, please adjust your BUID cache size or interval")
+            print("[BUAnalytics] Identifier cache has been depleted, please adjust your cache size or interval")
         
             //Generate backup identifier
             return UUID().uuidString

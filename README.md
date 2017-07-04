@@ -93,7 +93,7 @@ BUCollectionManager.instance.interval = 4000
 You can use this convenience method to quickly add a document to a collection name which will be created if needed.
 
 ```swift
-BUCollectionManager.instance.append(collection: "Users", document: BUDocument(contents: [ .. ]))
+BUCollectionManager.instance.append(collection: "Users", document: BUDocument(contents: [ ... ]))
 ```
 
 ## Error Handling

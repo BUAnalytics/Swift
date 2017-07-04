@@ -31,7 +31,7 @@ public class BUQuestion: BUTemplate{
         started = Date().timeIntervalSince1970
     }
     
-    public func answer(_ answer: String, correct: Bool? = nil){
+    public func respond(_ answer: String, correct: Bool? = nil){
         self.answer = answer
         self.correct = correct
         ended = Date().timeIntervalSince1970

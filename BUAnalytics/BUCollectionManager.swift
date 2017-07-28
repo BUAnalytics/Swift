@@ -36,6 +36,9 @@ public class BUCollectionManager {
     }
     
     //Convenience method for adding a document to a collection and creating the collection if non-existant
+    public func append(collection: String, document: Dictionary<String, Any>){
+        self.append(collection: collection, document: BUDocument(contents: document))
+    }
     public func append(collection: String, document: BUDocument){
         
         //Check whether document exists and create

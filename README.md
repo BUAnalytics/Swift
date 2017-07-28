@@ -2,6 +2,8 @@
 
 BU Analytics plugin for Swift compatible with iOS, macOS, tvOS, watchOS and Linux.
 
+Please visit our [BU Analytics](http://bu-games.bmth.ac.uk) website for more information.
+
 ## Installation
 
 To install the plugin you must copy the [BUAnalytics](BUAnalytics) folder into your Xcode project.
@@ -15,12 +17,25 @@ Then pass these details into the api singleton instance.
 BUAPI.instance.auth = BUAccessKey(key: "58ac40d0126553000c426f92", secret: "9a48ab9ac420c0b7f0ed477bb7f56b267477bb808b5ec4d2dddb7e39a57e6f4a")
 ```
 
-The hostname defaults to the university server although we can change this if necessary.
+## Getting Started
+
+You can use the convenience method to quickly add a document to a collection which will be created if needed.
 
 ```swift
-BUAPI.instance.url = "http://192.168.0.x"
-BUAPI.instance.path = "/api/v1"
+BUCollectionManager.instance.append(collection: "Users", document: [
+    "userId": ..,
+    "name": ..,
+    "age": ..,
+    "gender": ..,
+    "device": [
+        "type": ..,
+        "name": ..,
+        "model": ..
+    ]
+])
 ```
+
+If you would like to manage your own collections and documents please see below.
 
 ## Creating Collections
 
@@ -90,23 +105,17 @@ The default is 2000 milliseconds and setting it to 0 will disable automatic uplo
 BUCollectionManager.instance.interval = 4000
 ```
 
-You can use this convenience method to quickly add a document to a collection name which will be created if needed.
-
-```swift
-BUCollectionManager.instance.append(collection: "Users", document: BUDocument(contents: [ ... ]))
-```
-
 ## Error Handling
 
 You can subscribe to actions in the collection manager to notify you when collections upload successfully or return errors.
 
 ```swift
 BUCollectionManager.instance.error = { (collection, code) in
-  //...
+	//...
 }
  
 BUCollectionManager.instance.success = { (collection, count) in
-  //...
+	//...
 }
 ```
 
@@ -125,7 +134,7 @@ Once the cache has been marked as ready you can generate identifiers at any time
 
 ```swift
 if BUID.instance.isReady{
-  userDoc.append("userId", BUID.instance.generate())
+	userDoc.append("userId", BUID.instance.generate())
 }
 ```
 
@@ -135,4 +144,13 @@ GUIDs will be generated as a backup should the cache become empty.
 ```swift
 BUID.instance.interval = 4000
 BUID.instance.size = 100
+```
+
+## Advanced
+
+The hostname defaults to the bu analytics server although we can change this if necessary.
+
+```swift
+BUAPI.instance.url = "http://192.168.0.x"
+BUAPI.instance.path = "/api/v1"
 ```

@@ -19,7 +19,7 @@ BUAPI.instance.auth = BUAccessKey(key: "58ac40d0126553000c426f92", secret: "9a48
 
 ## Getting Started
 
-You can use the convenience method to quickly add a document to a collection which will be created if needed.
+You can use the convenience method to quickly add a document to a collection which will be created and uploaded automatically.
 
 ```swift
 BUCollectionManager.instance.append(collection: "Users", document: [

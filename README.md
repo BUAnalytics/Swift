@@ -110,11 +110,11 @@ BUCollectionManager.instance.interval = 4000
 You can subscribe to actions in the collection manager to notify you when collections upload successfully or return errors.
 
 ```swift
-BUCollectionManager.instance.error = { (collection, code) in
+BUCollectionManager.instance.error = { (collection, errorCode) in
     //...
 }
  
-BUCollectionManager.instance.success = { (collection, count) in
+BUCollectionManager.instance.success = { (collection, successCount) in
     //...
 }
 ```
@@ -148,7 +148,7 @@ BUID.instance.size = 100
 
 ## Advanced
 
-The hostname defaults to the bu analytics server although we can change this if necessary.
+The hostname defaults to the BU Analytics server although we can change this if necessary.
 
 ```swift
 BUAPI.instance.url = "http://192.168.0.x"

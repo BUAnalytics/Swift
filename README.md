@@ -111,11 +111,11 @@ You can subscribe to actions in the collection manager to notify you when collec
 
 ```swift
 BUCollectionManager.instance.error = { (collection, code) in
-	//...
+    //...
 }
  
 BUCollectionManager.instance.success = { (collection, count) in
-	//...
+    //...
 }
 ```
 
@@ -134,7 +134,7 @@ Once the cache has been marked as ready you can generate identifiers at any time
 
 ```swift
 if BUID.instance.isReady{
-	userDoc.append("userId", BUID.instance.generate())
+    userDoc.append("userId", BUID.instance.generate())
 }
 ```
 
